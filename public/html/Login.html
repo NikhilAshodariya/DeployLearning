@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Login Page</title>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Import materialize.css-->
+  <link rel="stylesheet" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection">
+
+  <!-- Own CSS -->
+  <link rel="stylesheet" href="../css/LoginPage.css">
+</head>
+
+<body style="">
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- jQuery library end -->
+
+  <!-- Materialize library -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- Materialize library end-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 offset-m3">
+        <div class="card">
+          <div class="card-content">
+            <div class="center-align">
+              <a href="#" class="brand-logo"><img src="../images/logo.jpg" alt="" class="responsive-img circle" style="width:100px;height:100px"></a>
+              <h5>Creative Company</h5>
+            </div>
+
+            <div class="row">
+              <div class="col s12 indicator">
+                <ul class="tabs">
+                  <li class="tab col s6"><a class="teal-text active" href="#loginTab">Login</a></li>
+                  <li class="tab col s6"><a class="teal-text" href="#signUpTab">Sign UP</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row" id="loginTab">
+              <div class="col s12">
+                <form action="/Login/signIn" method="post">
+                  <div class="input-field center-align">
+                    <input type="text" class="validate" name="email">
+                    <label for="email" class="active">Email</label>
+                    <!-- for indicates the id to which the label is bound to  -->
+                  </div>
+
+                  <div class="input-field">
+                    <input type="password" name="password">
+                    <label for="password" class="active">Password</label>
+                    <div class="right-align">
+                      <a href="#">Forgot password</a>
+                    </div>
+                  </div>
+
+                  <div class="login-rows">
+                    <input type="checkbox" id="rememberMe" />
+                    <label for="rememberMe">Remember Me</label>
+                  </div>
+
+                  <div id="loginButton" class="input-field">
+                    <input type="submit" name="" value="Login" class="btn waves-effect">
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="row" id="signUpTab">
+              <div class="col s12">
+                <form action = "/Login/signUp" method="post">
+                  <div class="input-field center-align">
+                    <input type="text" id="userName" name="userName" class="required">
+                    <label for="userName" class="active">User Name*</label>
+                  </div>
+
+                  <div class="input-field center-align">
+                    <input type="email" id="email" name="email" class="validate required">
+                    <label for="email" class="active">Email*</label>
+                  </div>
+
+                  <div class="input-field center-align">
+                    <input type="password" id="password" name="password" class="required">
+                    <label for="password" class="active">Password*</label>
+                  </div>
+
+                  <div class="input-field center-align">
+                    <!-- <input type="date" id="dob" class="datepicker required"> -->
+                    <input type="text" id="dob" name="dob" class="datepicker required">
+                    <label for="dob" class="active">Date of Birth*</label>
+                    <script type="text/javascript">
+                      $('.datepicker').pickadate({
+                        selectMonths: true, // Creates a dropdown to control month
+                        selectYears: 15, // Creates a dropdown of 15 years to control year,
+                        today: 'Today',
+                        clear: 'Clear',
+                        close: 'Ok',
+                        closeOnSelect: false // Close upon selecting a date,
+                      });
+                    </script>
+                  </div>
+
+                  <div id="singUpButton" class="input-field">
+                    <input type="submit" name="signUp" value="Sign Up" class="btn waves-effect green">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

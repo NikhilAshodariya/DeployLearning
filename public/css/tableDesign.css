@@ -1,0 +1,59 @@
+#playerMoveStatus{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.chessBoard{
+  float: left;
+}
+
+table {
+  background-color: lavenderblush;
+  border: solid;
+  border-width: 0.1em;
+}
+
+td {
+  width: 1em;
+  background-color: rosybrown;
+  height: 1.3em;
+}
+
+th {
+  width: 4em;
+  height: 2em;
+}
+
+td.leftNumber, td.rightNumber, th.leftNumber, th.rightNumber {
+  width: 1.3em;
+}
+
+td.leftNumber, td.rightNumber {
+  background-color: inherit;
+}
+
+td.leftNumber {
+  text-align: right;
+}
+
+td.rightNumber {
+  text-align: left;
+}
+
+.ChessPieces {
+  text-align: center;
+  font-size: 3em;
+}
+
+td.controlPanelBody, table.controlPanelBody {
+  background-color: white;
+}
+
+.pieceMoveButton {
+  background-color: darkseagreen;
+  width: 100%;
+}
+
+td.moveButtonCell {
+  background-color: white;
+}

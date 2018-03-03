@@ -1,0 +1,28 @@
+body {
+  /* background-image: linear-gradient(blue, white); */
+  /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+  background-image: url("../images/backgroundImage.jpg");
+  /* background-size: cover; */
+  /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-repeat: no-repeat, repeat; */
+  /* background-color: #cccccc; */
+}
+
+.tabs .indicator {
+  background-color: blue;
+  /*Color of underline*/
+}
+
+.tabs .tab a.active {
+  /* background-color: red; */
+  /*Background and text color when a tab is active*/
+}
+
+/* #forgotPassword {
+  vertical-align: top;
+  position: relative;
+  left: 20em;
+  top: -1em;
+} */
